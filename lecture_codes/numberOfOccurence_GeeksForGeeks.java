@@ -8,11 +8,11 @@ public class numberOfOccurence_GeeksForGeeks {
         return last - first + 1;
     }
     
-    private int findFirst(int[] arr, int target) {
+    public int findFirst(int[] arr, int target) {
         int low = 0, high = arr.length - 1;
         int result = -1;
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high - low)/2;
             if (arr[mid] == target) {
                 result = mid;
                 high = mid - 1; // Keep searching on the left
@@ -25,11 +25,11 @@ public class numberOfOccurence_GeeksForGeeks {
         return result;
     }
 
-    private int findLast(int[] arr, int target) {
+    public int findLast(int[] arr, int target) {
         int low = 0, high = arr.length - 1;
         int result = -1;
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high - low)/2;
             if (arr[mid] == target) {
                 result = mid;
                 low = mid + 1; // Keep searching on the right
@@ -50,3 +50,5 @@ public class numberOfOccurence_GeeksForGeeks {
         // Output: Count of 2 in the array: 3
     }
 }
+// we are finding the first and last index of a target element in the array and then we are subtracting 
+//their first index from last index and then adding 1 (last - first + 1) to get the count of the target element in the array.
