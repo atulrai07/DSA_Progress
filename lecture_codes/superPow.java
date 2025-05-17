@@ -27,8 +27,8 @@ public class superPow {
 
     public static void main(String[] args) {
         superPow obj = new superPow();
-        int a = 2;
-        int[] b = {1, 0};
+        int a = 3;
+        int[] b = {2, 0};
         int result = obj.superPow(a, b);
         System.out.println("Result: " + result); // Output: 1024
     }
