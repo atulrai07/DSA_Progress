@@ -1,4 +1,3 @@
-package Leetcode;
 class LinkedList {
 
     Node head;
