@@ -1,5 +1,14 @@
+import java.util.PriorityQueue;
 public class kthLargestElement_pq {
     public int findKthLargestElement(int[] nums, int k){
-        hello 
+        PriorityQueue <Integer> pq = new PriorityQueue<>();
+
+        for(int i=0;i<nums.length;i++){
+            pq.add(nums[i]);
+            if(pq.size() > k){
+                pq.poll();
+            }
+        }
+        return pq.peek();
     }
 }
