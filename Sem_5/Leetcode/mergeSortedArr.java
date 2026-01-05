@@ -24,9 +24,9 @@ public class mergeSortedArr {
     }
     public static void main(String[] args) {
         mergeSortedArr solution = new mergeSortedArr();
-        int[] nums1 = {1, 2, 3, 0, 0, 0};
+        int[] nums1 = {1, 32, 3, 0, 0, 2};
         int m = 3;
-        int[] nums2 = {2, 5, 6};
+        int[] nums2 = {9, 5, 6};
         int n = 3;
 
         solution.merge(nums1, m, nums2, n);
